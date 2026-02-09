@@ -123,7 +123,7 @@ async def run_nabto_probe(email: str, device_id: Optional[str], host: Optional[s
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Nilan communication helper")
+    parser = argparse.ArgumentParser(description="Nilan CodeWizard communication helper")
     parser.add_argument("--settings", default="settings.json", help="Path to settings JSON file")
     sub = parser.add_subparsers(dest="mode")
 

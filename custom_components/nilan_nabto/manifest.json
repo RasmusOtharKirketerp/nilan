@@ -1,0 +1,15 @@
+{
+  "domain": "nilan_nabto",
+  "name": "Nilan CodeWizard",
+  "codeowners": ["@RasmusOtharKirketerp"],
+  "config_flow": true,
+  "documentation": "https://github.com/RasmusOtharKirketerp",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/RasmusOtharKirketerp",
+  "loggers": ["custom_components.nilan_nabto"],
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0",
+  "homeassistant": "2026.2.1"
+}

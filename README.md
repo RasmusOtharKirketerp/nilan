@@ -1,55 +1,50 @@
-# Nilan Communication Tool
+# Nilan CodeWizard Home Assistant Integration
 
-This project is self-contained and uses only code from this repository at runtime.
+HACS custom integration for reading Nilan data via Nabto, branded as Nilan CodeWizard.
 
-## Runtime dependencies
+## Developer
 
-None. No external Python packages are required for runtime.
+- CodeWizard: https://github.com/RasmusOtharKirketerp
 
-## Run
+## Compatibility
 
-Direct run (uses `settings.json`):
+Tested with:
+- Home Assistant OS: `17.0`
+- Home Assistant Core: `2026.2.1`
+- Home Assistant Supervisor: `2026.01.1`
+- Home Assistant Frontend: `20260128.6`
 
-```bash
-python3 nilan_comm.py
-```
+Minimum supported Home Assistant Core version is set to `2026.2.1` in integration metadata.
 
-Explicit Nabto mode:
+## Installation (Home Assistant OS via HACS)
 
-```bash
-python3 nilan_comm.py nabto
-```
+1. In Home Assistant, install HACS first if it is not already installed.
+2. Go to `HACS -> Integrations -> 3 dots -> Custom repositories`.
+3. Add your repository URL and set category to `Integration`.
+4. Install `Nilan by CodeWizard` from HACS.
+5. Restart Home Assistant.
+6. Go to `Settings -> Devices & Services -> Add Integration`.
+7. Search for `Nilan CodeWizard` and complete setup.
 
-Optional overrides:
+## Configuration
 
-```bash
-python3 nilan_comm.py nabto --host 192.168.0.42 --port 5570 --email you@example.com
-```
+You will be asked for:
+- Authorized email
+- Gateway host/IP
+- Gateway port (default `5570`)
+- Optional device ID
+- Scan interval in seconds
 
-## Output
+## Entities
 
-The script returns JSON with connection status, datapoints, and setpoints.
+The integration creates:
+- `sensor.nilan_status`
+- sensors for available datapoints
+- sensors for available setpoints (`min/max/step` as attributes)
 
-## Vendored protocol stack
+`timestamp_utc` is exposed on the status sensor attributes.
 
-Nabto communication is vendored under `vendor/genvexnabto` and loaded from there.
+## Repository layout
 
-## Tests
-
-Install test dependencies:
-
-```bash
-python3 -m pip install --user -r requirements-dev.txt
-```
-
-Run unit tests:
-
-```bash
-python3 -m pytest --capture=no -q tests/test_unit.py
-```
-
-Run live tests (requires reachable gateway and valid `settings.json`):
-
-```bash
-RUN_LIVE_TESTS=1 python3 -m pytest --capture=no -q -m live tests/test_live.py
-```
+- `custom_components/nilan_nabto`: Home Assistant integration
+- `custom_components/nilan_nabto/vendor/genvexnabto`: vendored Nabto protocol stack

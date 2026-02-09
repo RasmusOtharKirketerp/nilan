@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Nilan CodeWizard",
+        "description": "Set up Nilan CodeWizard connection",
+        "data": {
+          "email": "Authorized email",
+          "host": "Gateway IP/host",
+          "port": "Gateway port",
+          "device_id": "Device ID (optional)",
+          "scan_interval": "Scan interval (seconds)"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Nilan CodeWizard options",
+        "data": {
+          "scan_interval": "Scan interval (seconds)"
+        }
+      }
+    }
+  }
+}
