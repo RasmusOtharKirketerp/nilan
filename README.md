@@ -1,42 +1,55 @@
 # Nilan Communication Tool
 
-This project now supports two paths:
+This project is self-contained and uses only code from this repository at runtime.
 
-- `local`: checks if your gateway exposes anything directly on LAN (ports/HTTP/Modbus TCP)
-- `nabto`: uses the community `genvexnabto` protocol (same family used by HA integrations), vendored in this repo under `vendor/genvexnabto`
+## Runtime dependencies
 
-## Setup
+None. No external Python packages are required for runtime.
+
+## Run
+
+Direct run (uses `settings.json`):
 
 ```bash
-python3 -m pip install --user -r requirements.txt
-python3 -m pip check
+python3 nilan_comm.py
 ```
 
-Copy `settings.example.json` to `settings.json` and fill in your gateway IP and app email.
-
-## 1) Local probe (official LAN exposure check)
+Explicit Nabto mode:
 
 ```bash
-python3 nilan_comm.py local <gateway-ip> --insecure
+python3 nilan_comm.py nabto
 ```
 
-## 2) Community Nabto probe (practical read path)
+Optional overrides:
 
 ```bash
-python3 nilan_comm.py nabto --email you@example.com
-```
-
-Optional selectors:
-
-```bash
-python3 nilan_comm.py nabto --email you@example.com --device-id <device-id>
-python3 nilan_comm.py nabto --email you@example.com --host 192.168.1.50 --port 5570
+python3 nilan_comm.py nabto --host 192.168.0.42 --port 5570 --email you@example.com
 ```
 
 ## Output
 
-Both modes return JSON so you can pipe into files/tools.
+The script returns JSON with connection status, datapoints, and setpoints.
 
-## Note about `genvexnabto`
+## Vendored protocol stack
 
-The project uses a vendored `genvexnabto` copy to avoid upstream packaging issues and keep behavior reproducible.
+Nabto communication is vendored under `vendor/genvexnabto` and loaded from there.
+
+## Tests
+
+Install test dependencies:
+
+```bash
+python3 -m pip install --user -r requirements-dev.txt
+```
+
+Run unit tests:
+
+```bash
+python3 -m pytest --capture=no -q tests/test_unit.py
+```
+
+Run live tests (requires reachable gateway and valid `settings.json`):
+
+```bash
+RUN_LIVE_TESTS=1 python3 -m pytest --capture=no -q -m live tests/test_live.py
+```

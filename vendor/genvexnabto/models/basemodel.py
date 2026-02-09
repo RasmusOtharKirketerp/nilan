@@ -1,8 +1,4 @@
 from typing import Dict, List, TypedDict
-try:
-    from typing import NotRequired
-except ImportError:
-    from typing_extensions import NotRequired
 
 class GenvexNabtoDatapointKey:
     # Temperature of the air to supplied to the house
@@ -135,21 +131,21 @@ class GenvexNabtoSetpointKey:
 
 
 class GenvexNabtoDatapoint(TypedDict):
-    obj: NotRequired[int] # Default 0
+    obj: int # Default 0
     address: int
-    divider: NotRequired[int] # Default 1
-    offset: NotRequired[int] # Default 0
+    divider: int # Default 1
+    offset: int # Default 0
 
 class GenvexNabtoSetpoint(TypedDict):
-    read_obj: NotRequired[int] # Default 0
+    read_obj: int # Default 0
     read_address: int
-    write_obj: NotRequired[int] # Default 0
+    write_obj: int # Default 0
     write_address: int
-    divider: NotRequired[int] # Default 1
-    offset: NotRequired[int] # Default 0
+    divider: int # Default 1
+    offset: int # Default 0
     min: int
     max: int
-    step: NotRequired[float] # Default 1.0
+    step: float # Default 1.0
 
 class GenvexNabtoBaseModel:    
 
