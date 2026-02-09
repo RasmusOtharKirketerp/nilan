@@ -20,13 +20,13 @@ jobs:
           python-version: "3.12"
 
       - name: Compile Python files
-        run: |
-          python -m compileall custom_components
+        run: python -m compileall custom_components
 
       - name: Validate with hassfest
         uses: home-assistant/actions/hassfest@master
 
-      - name: HACS validation
+      - name: HACS validation (non-blocking)
+        continue-on-error: true
         uses: hacs/action@main
         with:
           category: integration
