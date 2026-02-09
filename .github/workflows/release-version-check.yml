@@ -1,11 +1,16 @@
 name: Release Version Check
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "v*"
+      - "V*"
   release:
-    types: [published]
+    types: [published, prereleased, released, edited]
+
+permissions:
+  contents: read
 
 jobs:
   verify-version:
