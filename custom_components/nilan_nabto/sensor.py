@@ -51,34 +51,33 @@ def _friendly_name(key: str) -> str:
 
 
 def _build_description(key: str, source: str) -> SensorEntityDescription:
-    desc = SensorEntityDescription(
-        key=f"{source}_{key}",
-        name=_friendly_name(key),
-    )
-
+    kwargs: dict[str, Any] = {
+        "key": f"{source}_{key}",
+        "name": _friendly_name(key),
+    }
     if key.startswith("temp_") or key.endswith("_temp") or "temperature" in key:
-        desc.device_class = SensorDeviceClass.TEMPERATURE
-        desc.native_unit_of_measurement = UnitOfTemperature.CELSIUS
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["device_class"] = SensorDeviceClass.TEMPERATURE
+        kwargs["native_unit_of_measurement"] = UnitOfTemperature.CELSIUS
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
     elif "humidity" in key:
-        desc.device_class = SensorDeviceClass.HUMIDITY
-        desc.native_unit_of_measurement = PERCENTAGE
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["device_class"] = SensorDeviceClass.HUMIDITY
+        kwargs["native_unit_of_measurement"] = PERCENTAGE
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
     elif "co2" in key:
-        desc.device_class = SensorDeviceClass.CO2
-        desc.native_unit_of_measurement = CONCENTRATION_PARTS_PER_MILLION
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["device_class"] = SensorDeviceClass.CO2
+        kwargs["native_unit_of_measurement"] = CONCENTRATION_PARTS_PER_MILLION
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
     elif "rpm" in key:
-        desc.native_unit_of_measurement = REVOLUTIONS_PER_MINUTE
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["native_unit_of_measurement"] = REVOLUTIONS_PER_MINUTE
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
     elif "pwm" in key:
-        desc.native_unit_of_measurement = PERCENTAGE
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["native_unit_of_measurement"] = PERCENTAGE
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
     elif key.endswith("_days") or "days" in key:
-        desc.native_unit_of_measurement = "d"
-        desc.state_class = SensorStateClass.MEASUREMENT
+        kwargs["native_unit_of_measurement"] = "d"
+        kwargs["state_class"] = SensorStateClass.MEASUREMENT
 
-    return desc
+    return SensorEntityDescription(**kwargs)
 
 
 class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
