@@ -1,0 +1,28 @@
+set_setpoint:
+  name: Set Nilan setpoint
+  description: Write a setpoint value on the Nilan Nabto gateway.
+  fields:
+    key:
+      name: Setpoint key
+      description: Raw setpoint key, for example fan_speed.
+      required: true
+      example: fan_speed
+      selector:
+        text:
+    value:
+      name: Value
+      description: Numeric value to write for the setpoint key.
+      required: true
+      example: 4
+      selector:
+        number:
+          min: 0
+          max: 100
+          mode: box
+    entry_id:
+      name: Entry ID
+      description: Optional config entry ID when multiple entries are configured.
+      required: false
+      example: 01JABCDXYZ1234567890
+      selector:
+        text:

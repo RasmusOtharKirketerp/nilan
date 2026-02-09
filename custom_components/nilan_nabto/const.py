@@ -1,5 +1,5 @@
 DOMAIN = "nilan_nabto"
-PLATFORMS = ["sensor"]
+PLATFORMS = ["sensor", "number"]
 
 CONF_EMAIL = "email"
 CONF_HOST = "host"

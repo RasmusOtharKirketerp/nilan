@@ -107,6 +107,7 @@ The integration creates:
 - `sensor.nilan_status`
 - sensors for available datapoints
 - sensors for available setpoints (`min/max/step` as attributes)
+- number entities for writable setpoints (e.g. fan speed), where supported by the device model
 
 `timestamp_utc` is exposed on the status sensor attributes.
 

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 from datetime import datetime, timezone
 from typing import Any
 
@@ -86,6 +87,91 @@ async def run_nabto_probe(email: str, device_id: str | None, host: str | None, p
                 }
 
         report["ok"] = True
+        return report
+    finally:
+        try:
+            n.stopListening()
+        except Exception:
+            pass
+
+
+async def run_nabto_setpoint(
+    email: str,
+    device_id: str | None,
+    host: str | None,
+    port: int,
+    key: str,
+    value: float,
+) -> dict[str, Any]:
+    n = GenvexNabto(email)
+    report: dict[str, Any] = {
+        "mode": "nabto-setpoint",
+        "timestamp_utc": _utc_now_iso(),
+        "ok": False,
+        "selected_device": None,
+        "connection_error": None,
+        "key": key,
+        "requested_value": value,
+        "readback_value": None,
+    }
+
+    try:
+        discovered = await n.discoverDevices(clear=True)
+
+        if host:
+            n.setManualIP(host, port)
+            report["selected_device"] = {"mode": "manual_ip", "host": host, "port": port}
+        elif device_id:
+            n.setDevice(device_id)
+            found = await n.waitForDiscovery()
+            report["selected_device"] = {"mode": "device_id", "device_id": device_id, "found": found}
+            if not found:
+                report["connection_error"] = "device_not_discovered"
+                return report
+        elif discovered:
+            first = next(iter(discovered.items()))
+            n.setDevice(first[0])
+            report["selected_device"] = {
+                "mode": "first_discovered",
+                "device_id": first[0],
+                "host": first[1][0],
+                "port": first[1][1],
+            }
+        else:
+            report["connection_error"] = "no_devices_discovered"
+            return report
+
+        n.connectToDevice()
+        await n.waitForConnection()
+        if n._connection_error:  # noqa: SLF001
+            report["connection_error"] = n._connection_error  # noqa: SLF001
+            return report
+
+        got_data = await n.waitForData()
+        if not got_data:
+            report["connection_error"] = "connected_but_no_data"
+            return report
+
+        if not n.providesValue(key):
+            report["connection_error"] = "setpoint_not_supported"
+            return report
+
+        min_value = n.getSetpointMinValue(key)
+        max_value = n.getSetpointMaxValue(key)
+        if value < min_value or value > max_value:
+            report["connection_error"] = "setpoint_out_of_range"
+            report["min"] = min_value
+            report["max"] = max_value
+            return report
+
+        n.setSetpoint(key, value)
+        await asyncio.sleep(1.0)
+        n.sendSetpointStateRequest(201)
+        await asyncio.sleep(1.0)
+        report["readback_value"] = n.getValue(key)
+        report["ok"] = report["readback_value"] == value
+        if not report["ok"]:
+            report["connection_error"] = "setpoint_readback_mismatch"
         return report
     finally:
         try:
