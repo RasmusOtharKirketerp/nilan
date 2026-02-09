@@ -3,14 +3,25 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-from homeassistant.components.sensor import SensorEntity
+from homeassistant.components.sensor import (
+    SensorDeviceClass,
+    SensorEntity,
+    SensorEntityDescription,
+    SensorStateClass,
+)
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import (
+    CONCENTRATION_PARTS_PER_MILLION,
+    PERCENTAGE,
+    REVOLUTIONS_PER_MINUTE,
+    UnitOfTemperature,
+)
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import CONF_DEVICE_ID, CONF_HOST, DOMAIN
+from .const import CONF_DEVICE_ID, CONF_HOST, DOMAIN, INTEGRATION_VERSION
 from .coordinator import NilanNabtoCoordinator
 from .vendor.genvexnabto.models import GenvexNabtoDatapointKey, GenvexNabtoSetpointKey
 
@@ -19,6 +30,7 @@ from .vendor.genvexnabto.models import GenvexNabtoDatapointKey, GenvexNabtoSetpo
 class NilanSensorDescription:
     key: str
     source: str
+    entity: SensorEntityDescription
 
 
 def _all_class_values(cls) -> list[str]:
@@ -31,6 +43,42 @@ def _all_class_values(cls) -> list[str]:
     return values
 
 
+def _friendly_name(key: str) -> str:
+    parts = key.replace("_", " ").split()
+    return " ".join(p.upper() if p in {"co2", "cts", "rpm"} else p.capitalize() for p in parts)
+
+
+def _build_description(key: str, source: str) -> SensorEntityDescription:
+    desc = SensorEntityDescription(
+        key=f"{source}_{key}",
+        name=_friendly_name(key),
+    )
+
+    if key.startswith("temp_") or key.endswith("_temp") or "temperature" in key:
+        desc.device_class = SensorDeviceClass.TEMPERATURE
+        desc.native_unit_of_measurement = UnitOfTemperature.CELSIUS
+        desc.state_class = SensorStateClass.MEASUREMENT
+    elif "humidity" in key:
+        desc.device_class = SensorDeviceClass.HUMIDITY
+        desc.native_unit_of_measurement = PERCENTAGE
+        desc.state_class = SensorStateClass.MEASUREMENT
+    elif "co2" in key:
+        desc.device_class = SensorDeviceClass.CO2
+        desc.native_unit_of_measurement = CONCENTRATION_PARTS_PER_MILLION
+        desc.state_class = SensorStateClass.MEASUREMENT
+    elif "rpm" in key:
+        desc.native_unit_of_measurement = REVOLUTIONS_PER_MINUTE
+        desc.state_class = SensorStateClass.MEASUREMENT
+    elif "pwm" in key:
+        desc.native_unit_of_measurement = PERCENTAGE
+        desc.state_class = SensorStateClass.MEASUREMENT
+    elif key.endswith("_days") or "days" in key:
+        desc.native_unit_of_measurement = "d"
+        desc.state_class = SensorStateClass.MEASUREMENT
+
+    return desc
+
+
 class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     def __init__(
         self,
@@ -40,11 +88,10 @@ class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     ) -> None:
         super().__init__(coordinator)
         self.entity_description = description
-        self._entry = entry
 
         host = entry.data.get(CONF_HOST, "unknown")
         self._attr_unique_id = f"{entry.entry_id}_{description.source}_{description.key}"
-        self._attr_name = f"Nilan {description.key}"
+        self._attr_name = f"Nilan {description.entity.name}"
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, str(entry.data.get(CONF_DEVICE_ID) or host))},
             name=f"Nilan {host}",
@@ -100,6 +147,7 @@ class NilanStatusSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     def extra_state_attributes(self) -> dict[str, Any]:
         data = self.coordinator.data or {}
         return {
+            "integration_version": INTEGRATION_VERSION,
             "timestamp_utc": data.get("timestamp_utc"),
             "connection_error": data.get("connection_error"),
         }
@@ -122,7 +170,7 @@ async def async_setup_entry(
             NilanNabtoSensor(
                 coordinator,
                 entry,
-                NilanSensorDescription(key=key, source="datapoints"),
+                NilanSensorDescription(key=key, source="datapoints", entity=_build_description(key, "datapoints")),
             )
         )
 
@@ -131,7 +179,7 @@ async def async_setup_entry(
             NilanNabtoSensor(
                 coordinator,
                 entry,
-                NilanSensorDescription(key=key, source="setpoints"),
+                NilanSensorDescription(key=key, source="setpoints", entity=_build_description(key, "setpoints")),
             )
         )
 

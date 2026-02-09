@@ -1,5 +1,6 @@
 DOMAIN = "nilan_nabto"
 PLATFORMS = ["sensor"]
+INTEGRATION_VERSION = "0.1.1"
 
 CONF_EMAIL = "email"
 CONF_HOST = "host"
