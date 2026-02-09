@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
+import json
+from pathlib import Path
 
 from homeassistant.components.sensor import (
     SensorDeviceClass,
@@ -21,7 +23,7 @@ from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
-from .const import CONF_DEVICE_ID, CONF_HOST, DOMAIN, INTEGRATION_VERSION
+from .const import CONF_DEVICE_ID, CONF_HOST, DOMAIN
 from .coordinator import NilanNabtoCoordinator
 from .vendor.genvexnabto.models import GenvexNabtoDatapointKey, GenvexNabtoSetpointKey
 
@@ -147,7 +149,7 @@ class NilanStatusSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     def extra_state_attributes(self) -> dict[str, Any]:
         data = self.coordinator.data or {}
         return {
-            "integration_version": INTEGRATION_VERSION,
+            "integration_version": _manifest_version(),
             "timestamp_utc": data.get("timestamp_utc"),
             "connection_error": data.get("connection_error"),
         }
@@ -184,3 +186,11 @@ async def async_setup_entry(
         )
 
     async_add_entities(entities)
+
+
+def _manifest_version() -> str:
+    try:
+        manifest_path = Path(__file__).resolve().parent / "manifest.json"
+        return str(json.loads(manifest_path.read_text(encoding="utf-8")).get("version", "unknown"))
+    except Exception:
+        return "unknown"

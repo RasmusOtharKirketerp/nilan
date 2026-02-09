@@ -51,10 +51,8 @@ The integration creates:
 
 ## Versioning
 
-- Integration version is tracked in:
+- Integration version is tracked only in:
   - `custom_components/nilan_nabto/manifest.json` (`version`)
-  - `custom_components/nilan_nabto/const.py` (`INTEGRATION_VERSION`)
-- Keep these in sync for each release.
 - Release notes are tracked in `CHANGELOG.md`.
 
 ## HACS Update Notifications
@@ -63,11 +61,8 @@ HACS is configured to track releases (not every commit) via `hacs.json`:
 - `hide_default_branch: true`
 
 When you publish a new version:
-1. Bump version in:
-   - `custom_components/nilan_nabto/manifest.json`
-   - `custom_components/nilan_nabto/const.py`
+1. Update `custom_components/nilan_nabto/manifest.json` `version`.
 2. Update `CHANGELOG.md`.
-3. Create and push a matching git tag: `vX.Y.Z`.
-4. Publish a GitHub Release from that tag.
+3. Push to GitHub (and publish a release if you want release notes in HACS).
 
 After this, HACS will show an available update to users on older versions.
