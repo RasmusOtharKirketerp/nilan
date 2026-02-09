@@ -35,6 +35,17 @@ class NilanSensorDescription:
     entity: SensorEntityDescription
 
 
+def _manifest_version() -> str:
+    try:
+        manifest_path = Path(__file__).resolve().parent / "manifest.json"
+        return str(json.loads(manifest_path.read_text(encoding="utf-8")).get("version", "unknown"))
+    except Exception:
+        return "unknown"
+
+
+INTEGRATION_VERSION = _manifest_version()
+
+
 def _all_class_values(cls) -> list[str]:
     values: list[str] = []
     for name, value in cls.__dict__.items():
@@ -88,7 +99,8 @@ class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
         description: NilanSensorDescription,
     ) -> None:
         super().__init__(coordinator)
-        self.entity_description = description
+        self._nilan_description = description
+        self.entity_description = description.entity
 
         host = entry.data.get(CONF_HOST, "unknown")
         self._attr_unique_id = f"{entry.entry_id}_{description.source}_{description.key}"
@@ -103,20 +115,20 @@ class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     @property
     def native_value(self):
         data = self.coordinator.data or {}
-        if self.entity_description.source == "datapoints":
-            return data.get("datapoints", {}).get(self.entity_description.key)
+        if self._nilan_description.source == "datapoints":
+            return data.get("datapoints", {}).get(self._nilan_description.key)
 
-        setpoint = data.get("setpoints", {}).get(self.entity_description.key)
+        setpoint = data.get("setpoints", {}).get(self._nilan_description.key)
         if isinstance(setpoint, dict):
             return setpoint.get("value")
         return None
 
     @property
     def extra_state_attributes(self) -> dict[str, Any] | None:
-        if self.entity_description.source != "setpoints":
+        if self._nilan_description.source != "setpoints":
             return None
 
-        setpoint = (self.coordinator.data or {}).get("setpoints", {}).get(self.entity_description.key)
+        setpoint = (self.coordinator.data or {}).get("setpoints", {}).get(self._nilan_description.key)
         if not isinstance(setpoint, dict):
             return None
 
@@ -148,7 +160,7 @@ class NilanStatusSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
     def extra_state_attributes(self) -> dict[str, Any]:
         data = self.coordinator.data or {}
         return {
-            "integration_version": _manifest_version(),
+            "integration_version": INTEGRATION_VERSION,
             "timestamp_utc": data.get("timestamp_utc"),
             "connection_error": data.get("connection_error"),
         }
@@ -185,11 +197,3 @@ async def async_setup_entry(
         )
 
     async_add_entities(entities)
-
-
-def _manifest_version() -> str:
-    try:
-        manifest_path = Path(__file__).resolve().parent / "manifest.json"
-        return str(json.loads(manifest_path.read_text(encoding="utf-8")).get("version", "unknown"))
-    except Exception:
-        return "unknown"

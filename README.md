@@ -26,6 +26,72 @@ Minimum supported Home Assistant Core version is set to `2026.2.1` in integratio
 6. Go to `Settings -> Devices & Services -> Add Integration`.
 7. Search for `Nilan CodeWizard` and complete setup.
 
+## Local Testing Before Publish
+
+Use local install to test changes without HACS/GitHub download limits.
+
+Linux/HA container host:
+
+```bash
+./scripts/sync_local.sh /path/to/ha_config
+```
+
+Windows:
+
+```bat
+scripts\\sync_local.bat C:\\path\\to\\ha_config
+```
+
+Or use the root publisher shortcut:
+
+```bat
+publish_to_ha.bat C:\\path\\to\\ha_config
+```
+
+On Windows, if `local_settings.json` has `ha.config_path`, you can run without arguments:
+
+```bat
+scripts\\sync_local.bat
+publish_to_ha.bat
+```
+
+### SSH Deploy To Raspberry Pi / HA Host
+
+If your Home Assistant runs on a Pi and is reachable by SSH, use:
+
+Linux/WSL:
+
+```bash
+./scripts/deploy_ha_ssh.sh
+```
+
+Windows:
+
+```bat
+scripts\\deploy_ha_ssh.bat
+```
+
+These commands read SSH target details from `local_settings.json`:
+- `ha.host`
+- `ha.port`
+- `ha.username`
+- `ha.auth.method` (`password` or `key`)
+- `ha.auth.password` (when using password auth)
+- `ha.auth.private_key_path` (optional)
+- `ha.config_path` (usually `/config`)
+- `deploy.integration_src` (default `custom_components/nilan_nabto`)
+- `deploy.integration_name` (default `nilan_nabto`)
+- `deploy.restart_after_deploy` (`true` to send restart command automatically)
+
+Password auth notes:
+- `deploy_ha_ssh.sh` uses `sshpass` when `ha.auth.method=password`.
+- `deploy_ha_ssh.bat` uses PuTTY tools (`plink` + `pscp`) when `ha.auth.method=password`.
+
+After syncing:
+1. Restart Home Assistant.
+2. Go to `Settings -> Devices & Services`.
+3. Reload `Nilan CodeWizard` integration.
+
 ## Configuration
 
 You will be asked for:
