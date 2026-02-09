@@ -1,14 +1,18 @@
 {
   "domain": "nilan_nabto",
   "name": "Nilan CodeWizard",
-  "codeowners": ["@RasmusOtharKirketerp"],
+  "codeowners": [
+    "@RasmusOtharKirketerp"
+  ],
   "config_flow": true,
   "documentation": "https://github.com/RasmusOtharKirketerp/nilan",
   "integration_type": "hub",
   "iot_class": "local_polling",
   "issue_tracker": "https://github.com/RasmusOtharKirketerp/nilan/issues",
-  "loggers": ["custom_components.nilan_nabto"],
+  "loggers": [
+    "custom_components.nilan_nabto"
+  ],
   "requirements": [],
   "single_config_entry": true,
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
