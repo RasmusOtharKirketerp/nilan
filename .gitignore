@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Local runtime outputs
+local_output.json
+nabto_output.json
+run_output.log
+
+# Local operator secrets/config
+settings.local.json

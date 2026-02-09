@@ -1,0 +1,22 @@
+{
+  "gateway": {
+    "host": "192.168.0.42",
+    "port": 5570,
+    "device_id": "",
+    "modbus_unit": 1,
+    "modbus_register": 0,
+    "modbus_count": 10
+  },
+  "auth": {
+    "email": "your-nilan-app-email@example.com"
+  },
+  "probes": {
+    "timeout_seconds": 2.0,
+    "insecure_https": true,
+    "ports": [80, 443, 502, 1883, 8883, 8080, 8443]
+  },
+  "mode": {
+    "run_local": true,
+    "run_nabto": true
+  }
+}

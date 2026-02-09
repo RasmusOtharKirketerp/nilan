@@ -1,0 +1,900 @@
+BRUGERVEJLEDNING
+CTS602  BY NILAN
+Comfort CT300 Polar
+Version 3.00 - 15.11.2018
+INDHOLDSFORTEGNELSE
+Si
+kkerhed og information
+Strømforsyning ............................................................................................................................................................................................................................................................ 3
+Bortskaffelse .............................................................................................................................................................................................................................................................................. 3
+Ventilationsanlæg ..................................................................................................................................................................................................................................................... 3
+Anlægstype ...................................................................................................................................................................................................................................................................................3
+Typeskilt ...............................................................................................................................................................................................................................................................................3
+Quickguide
+Funktioner betjeningspanel ........................................................................................................................................................................................................................................4
+Forside elementer ..................................................................................................................................................................................................................................................... 4
+Forside indstillingsmuligheder .................................................................................................................................................................................................................... 5
+Advarsler og alarmer ............................................................................................................................................................................................................................................. 6
+Indstillinger menuoversigt ...............................................................................................................................................................................................................................7
+Service og vedligehold
+Bypass-funktion .......................................................................................................................................................................................................................................................... 8
+Fugtstyring ........................................................................................................................................................................................................................................................................ 8
+Vedligehold ........................................................................................................................................................................................................................................................................8
+Vandlås .................................................................................................................................................................................................................................................................................. 9
+Udskiftning af filter ..................................................................................................................................................................................................................................................9
+Veksler ................................................................................................................................................................................................................................................................................... 9
+Illustration af filterskift ...................................................................................................................................................................................................................................10
+Brugerindstillinger
+Ventilation indstillinger ............................................................................................................................................................................................................................................... 12
+Stop aggregatet ....................................................................................................................................................................................................................................................... 12
+Driftfunktion ................................................................................................................................................................................................................................................................12
+Alarm .................................................................................................................................................................................................................................................................................... 13
+Vis data .............................................................................................................................................................................................................................................................................. 13
+Dato/Tid ............................................................................................................................................................................................................................................................................14
+Ugeprogram ..................................................................................................................................................................................................................................................................14
+Eftervarme .....................................................................................................................................................................................................................................................................16
+Luftfugtighed .............................................................................................................................................................................................................................................................. 17
+CO2..........................................................................................................................................................................................................................................................................................18
+Luftskifte ......................................................................................................................................................................................................................................................................... 18
+Luftfilter ........................................................................................................................................................................................................................................................................... 19
+Temp. regulering ..................................................................................................................................................................................................................................................... 20
+Sprog .....................................................................................................................................................................................................................................................................................21
+Alarmliste
+Comfort anlæg ....................................................................................................................................................................................................................................................................... 22
+Alarmliste .......................................................................................................................................................................................................................................................................22
+Produkt data
+Overensstemmelseserklæring ................................................................................................................................................................................................................24
+Ecodesign data Comfort CT300 ..............................................................................................................................................................................................................25
+Passivhus-certifikat ............................................................................................................................................................................................................................................ 26
+2
+Sikkerhed og information
+Strømforsyning
+ADVARSEL
+Afbryd altid strømforsyningen til aggregatet, hvis der forekommer fejl, der ikke kan afhjælpes
+via betjeningspanelet.
+ADVARSEL
+Forekommer der fejl på el-førende dele på aggregatet, skal en autoriseret el-installatør altid
+kontaktes for udbedring af fejlen.
+ADVARSEL
+Afbryd altid strømmen til aggregatet, inden du åbner lågerne ved f.eks. installation, inspektion,
+rengøring og filterskift.
+Bortskaffelse
+Ventilationsanlæg
+Nilans aggregater består hovedsageligt af genanvendelige materialer. Derfor må
+de ikke bortskaffes sammen med husaffald, men skal ved bortskaffelse
+afleveres ved den lokale miljøstation.
+Anlægstype
+Typeskilt
+På toppen af aggregatet findes Nilans typeskilt.
+Bemærk: Ved henvendelse til Nilan A/S med spørgsmål om produktet, er det vigtigt at have
+aggregatets navn og serie-nr. (SN) klar. Ud fra denne oplysninger kan service-afdelingen finde alle
+informationer om det pågældende aggregat og dermed hjælpe med informationer og svare på
+spørgsmål om, hvad aggregatet består af / indeholder, samt hvilken software der anvendes.
+Comfort CT300 Polar BY NILAN
+3
+Quickguide
+Funktioner betjeningspanel
+Forside elementer
+Fo
+rsiden af HMI-panelet indeholder de indstillingsmuligheder og informationer en bruger oftest
+benytter.
+1. Viser den aktuelle rumtemperatur i huset, målt
+vi
+a udsugningsluften.
+2. Viser den aktuelle luftfugtighed.
+3. Viser husets CO 2-niveau, hvis aggregatet er
+udstyret med en CO 2-sensor.
+4. Viser det aktuelle ventilationstrin.
+5. Viser brugervalg og ugeprogram, hvis disse er
+aktiveret. Hvis anlægget er slukket vises stop
+symbolet og der vil stå "slukket" ved
+ventilationstrin. Ved advarsel eller alarm,
+fremkommer alarm ikonet.
+6. Adgang til indstillingsmenuen, hvor der er flere
+indstillingsmuligheder.
+Brugervalg ikon
+Stop ikon
+Ugeprogram ikon
+Alarm ikon
+4
+Forside indstillingsmuligheder
+De
+ indstillingsmuligheder brugeren i det daglige har brug for, kan alle indstilles fra panelets forside.
+Ved tryk på aktuel rumtemperatur vises den ønskede
+ru
+mtemperatur.
+Den ønskede rumtemperatur kan ændres ved at trykke på
+pilen op eller ned og afslutte med fortryd ikonet nederst til
+venstre eller godkend ikonet nederst til højre.
+Ved tryk på aktuel ventilationstrin vises det ønskede
+ve
+ntilationstrin.
+Det ønskede ventilationstrin kan ændres ved at trykke på
+pilen op eller ned og afslutte med fortryd ikonet nederst til
+venstre eller godkend ikonet nederst til højre.
+Comfort CT300 Polar  B
+ Y NILAN
+5
+Advarsler og alarmer
+Sk
+er der fejl i aggregatets drift ,vil der enten komme en advarsel eller en alarm. Advarslen vises øverst
+til højre i menulinjen.
+Trykkes der på symbolet, fremkommer en
+be
+skrivelse af advarslen eller alarmen.
+Advarslen eller alarmen kan nulstilles ved
+at
+ trykke på "Clear Alarm".
+Advarsel viser, at man skal være opmærksom på noget, f.eks. at filtre skal skiftes.
+Ag
+gregatet kører normalt.
+Alarm viser, at der er noget alvorligt galt med aggregatet, der ofte kræver en fagmand.
+Ag
+gregatet er stoppet.
+6
+Indstillinger menuoversigt
+Me
+nuen for indstillinger er opbygget på en måde, der gør det nemt at overskue og finde rundt i.
+Comfort CT300 Polar  B Y NILAN
+7
+Service og vedligehold
+By
+pass-funktion
+Når den aktuelle rumtemperatur er over den ønskede temperatur, er der ikke længere behov for
+varmegenvinding. I den situation åbner bypasset og leder nogt af udeluften forbi varmeveksleren. Det
+medfører et lavere internt tryk i aggregat og man sparer dermed energi på ventilatordriften.
+Fugtstyring
+Aggregatet er som standard udstyret med en intelligent fugtstyring, der automatisk tilpasser sig
+familiens eller bygningens behov.
+Ved hjælp af den indbyggede fugtføler, beregner styringen gennemsnitsniveauet for de seneste 24
+timer. Gennemsnitsniveauet danner grundlag for, om der skal ændres på luftskiftet ved udsving i
+luftfugtigheden i udsugningsluften, og samtidig tilpasser det sig niveauet i luftfugtigheden sommer og
+vinter.
+Stiger luftfugtigheden med mere en 5 - 10% (sommer/vinter) aktiveres forceret ventilation for at få
+fugten ventileret ud så hurtig som muligt. Falder den gennemsnitlige luftfugtighed til under det
+indstillede niveau for lav fugtighed (fabriksindstilling 30%), vil aggregatet gå i reduceret drift med
+mindre luftskifte, for ikke at udtørre boligen yderligere.
+Denne automatiske fugtstyring er med til at spare energi på driften, samt sikre en god komfort i
+boligen.
+Vedligehold
+Ni
+lans ventilationsaggregater holder i mange år, men for at få optimal glæde af aggregatet og samtidig
+undgå unødigt strømforbrug, er det vigtigt, at det vedligeholdes korrekt.
+8
+Følgende dele kræver jævnlig vedligeholdelse:
+• V
+andlås
+• Filtre
+Vandlås
+Vandlåsen kan udtørre og dermed forhindre vand i at bortledes fra kondensbakken, da der så vil blæse
+luft ind i aggregatet. Kondensvandet vil ophobe sig i kondensbakken og på et tidspunkt vil vandet løbe
+over og der kan opstå vandskade på aggregatets underlag.
+Vandlåsen bør derfor kontrolleres med jævne mellemrum - specielt efter sommeren, hvor muligheden
+for udtørring er størst, og fyldes med vand.
+Udskiftning af filter
+Filtrene har til formål at beskytte ventilatorer og varmeveksleren, så de ikke bliver tildækkede og
+ødelagte af støv og snavs.
+For at opnå en god drift er det vigtigt at skifte filtrene efter behov. Filter timeren i Nilans styring er
+som standard indstillet til filterskift efter 90 dage, men dette kan efter behov ændres til 180 eller 360
+dage.
+Ved manglende filterskift formindskes ventilationen, hvilket kan medføre forringelse af indeklimaet,
+samt påvirke anlæggets automatiske fugtstyring.
+Veksler
+Veksleren bør efterses ca. hvert andet år for støv og snavs, for at sikre at luften glider uhindret
+igennem. En tilstoppet veksler øger strømforbruget.
+Comfort CT300 Polar  B
+ Y NILAN
+9
+Illustration af filterskift
+1. Der skal slukkes for aggregatet på betjeningspanelet
+un
+der DRIFT, som findes under hovedmenuen
+INDSTILLINGER, inden lågen åbnes
+2. Fingerskruerne løsnes i den øverste låge og lågen
+lø
+ftes ud
+3. De 2 filtre tages ud af aggregatet 4. Det er en god idé at støvsuge filterkamrene for evt.
+sn
+avs, der kan forekomme
+5. Det nye filter skal vende med pilen væk fra
+ka
+naltilslutningerne. Filteret placeres i de afmærkede
+spor og lågen lukkes igen
+6. Gå i menuen VIS ALARMER på betjeningspanet og
+nu
+lstil alarmen her
+10
+Comfort CT300 Polar  B Y NILAN
+11
+Brugerindstillinger
+Ventilation indstillinger
+Stop aggregatet
+Hvis der er behov for at åbne lågerne i forbindelse med servicering af aggregatet, f.eks. ved filterskift,
+skal der slukkes for aggregatet.
+Aggregatets funktioner aktiveres i indstillinger under Drift.
+Hvis aggregatet er slukket, kommer der et ikon på forsiden 
+Drift
+↳ Drift Indstillinger:
+Beskrivelse:
+Slukket / Tændt
+Aggregatet skal slukkes i forbindelse med servicering
+når lågerne åbnes
+Driftfunktion
+Det er muligt at give aggregatet input for om det skal køre "Auto", "Varme" eller "Bypass" drift.
+OBS
+Funktionerne "Varme" og "Bypass" overstyrer ugeplanen. Der skiftes automatisk over til "Auto"
+ved næste skift i ugeplanen, hvis en ugeplan er programmeret.
+Driftfunktion
+↳ Auto Indstillinger:
+Standardindstilling:
+Beskrivelse:
+Auto / Bypass / Varme
+Auto
+Auto: Aggregatet kører efter indstillede værdier
+Bypass: Aggregatet kører efter indstillede værdier,
+men bruger ikke varmegenvinding
+Varme: Aggregatet kører efter indstillede værdier, og
+bypass-spjældet kan ikke åbne.
+12
+Alarm
+Advarsler og alarmer kan aflæses i menuen "Alarm". Det er også muligt at nulstille advarsler og
+alarmer i denne menu.
+Når der er udløst en advarsel eller alarm, kommer der et ikon på forsiden 
+Alarm
+↳ Alarm nummer og navn Beskrivelse: Ved tryk vises en liste over alarm ID-nummer og
+oplysning om alarmtypen og om det er en Kritisk
+hændelse. (Se i alarmlisten for yderligere information)
+Alarmen kan godkendes ved at trykke på "Clear Alarm"
+OBS
+Når en alarm er aktiv kan den ikke nulstilles i panelet. Når alarmen er afhjulpet står den som
+inaktiv og kan nulstilles ved at trykke på "Clear Alarm".
+Vis data
+Det er muligt at aflæse aktuelle data for Comfort anlæggene.
+Vis data
+↳ Driftsstatus Beskrivelse: Viser i hvilken driftsindstilling aggregatet kører.
+↳ Bypass Beskrivelse: Viser om bypass spjældet er åbent eller lukket.
+↳ T2 Tilluft Beskrivelse: Viser indblæsningstemperaturen. Hvis der er
+installeret eftervarmeflade vises T7 istedet for.
+↳ T3 Fraluft / Rum Beskrivelse: Viser rumtemperaturen som gennemsnit af hele huset.
+↳ T4 Afkast Beskrivelse: Viser afkastlufttemperaturen.
+↳ T7 Tilluft Beskrivelse: Viser indblæsningstemperaturen, hvis der er
+installeret eftervarmeflade - ellers vises T2.
+↳
+ T8 Udeluft Beskrivelse: Viser udetemperaturen før forvarmeflade.
+↳ T9 Vand varmeflade Beskrivelse: Viser temperaturen i vand-eftervarmefladen.
+↳ T10 Ekstern Beskrivelse: Viser ekstern rumtemperatur
+↳ Luftfugtighed Beskrivelse: Viser den aktuelle luftfugtighed i boligen.
+↳ CO2 Beskrivelse: Viser det aktuelle CO 2-niveau i boligen (kun hvis
+installeret).
+↳ Tilluft ventilator Beskrivelse: Viser i hvilket trin tilluft ventilatoren kører.
+↳ Fraluft ventilator Beskrivelse: Viser i hvilket trin fraluft ventilatoren kører.
+↳ Anlægsinformation Beskrivelse: Tryk på "Anlægsinformation" for yderligere
+information.
+     ↳
+ Anlægs type Beskrivelse: Viser navnet på det produkt softwaren er indstillet til.
+     ↳ Software version Beskrivelse: Viser installeret software version.
+     ↳ Panel software Beskrivelse: Viser installeret software version på panelet.
+Comfort CT300 Polar BY NILAN
+13
+Dato/Tid
+De
+t er vigtigt at få indstillet dato og tid korrekt. Det giver bedre mulighed for at lokalisere fejl ved
+fejlmelding. Ved logning af data er det vigtigt at kunne følge historikken. Tiden vises under "Dato / Tid" i
+displayet.
+Dato / Tid
+↳ År B eskrivelse: Vælg "År" i panelet og vælg herefter det år der ønskes.
+↳ Måned B eskrivelse: Vælg "Måned" i panelet og vælg herefter den måned
+de
+r ønskes.
+↳ Dag B eskrivelse: Vælg "Dag" i panelet og vælg herefter den ugedag der
+øn
+skes.
+↳ Time B eskrivelse: Vælg "Time" i panelet og vælg herefter det timetal der
+øn
+skes.
+↳ Minut B eskrivelse: Vælg "Minut" i panelet og vælg herefter det minuttal
+de
+r ønskes.
+Ugeprogram
+De
+t er muligt at programmere aggregatet til at køre efter nogle bestemte indstillinger på faste
+tidspunkter i løbet af ugen via en ugeplan.
+Når ugeplanen er aktiv, kommer der et ikon på forsiden 
+Ugeprogram
+↳ Vælg program B eskrivelse: Der kan vælges mellem Program 1, 2 og 3 eller slukket.
+↳ Rediger program B eskrivelse: Det valgte ugeprogram er nu aktiv og det er muligt at
+re
+digere i programmet.
+     ↳ Mandag B eskrivelse: Her kan vælges mellem Mandag, Tirsdag, Onsdag,
+To
+rsdag, Fredag, Lørdag og Søndag.
+          ↳ Funktion 1 B eskrivelse: Under hver funktion kan der indstilles mellem tid,
+te
+mperatur og ventilationstrin.
+               ↳ Start tid I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Timer og minutter
+6:
+00
+Indstil hvornår på døgnet programmet skal starte.
+Programmet kører til næste programskift i ugeplanen.
+               ↳ Ventilation I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 3
+Her vælges det ønskede ventilationsniveau.
+               ↳ Temperaturer I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+5 - 40 °C
+22
+ °C
+Her indstilles den ønskede rumtemperatur.
+          ↳ Funktion 2 U nder hver funktion kan der indstilles mellem tid,
+te
+mperatur og ventilationstrin.
+14
+               ↳ Start tid I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Timer og minutter
+8:
+00
+Indstil hvornår på døgnet programmet skal starte.
+Programmet kører til næste programskift i ugeplanen.
+               ↳ Ventilation I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 1
+Her vælges det ønskede ventilationsniveau.
+               ↳ Temperaturer I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+5 - 40 °C
+22
+ °C
+Her indstilles den ønskede rumtemperatur.
+          ↳ Funktion 3 B eskrivelse: Under hver funktion kan der indstilles mellem tid,
+te
+mperatur og ventilationstrin.
+               ↳ Start tid I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Timer og minutter
+15
+:00
+Indstil hvornår på døgnet programmet skal starte.
+Programmet kører til næste programskift i ugeplanen.
+               ↳ Ventilation I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 3
+Her vælges det ønskede ventilationsniveau.
+               ↳ Temperaturer I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+5 - 40 °C
+22
+ °C
+Her indstilles den ønskede rumtemperatur.
+          ↳ Funktion 4 B eskrivelse: Under hver funktion kan der indstilles mellem tid,
+te
+mperatur og ventilationstrin.
+               ↳ Start tid I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Timer og minutter
+22
+:00
+Indstil hvornår på døgnet programmet skal starte.
+Programmet kører til næste programskift i ugeplanen.
+               ↳ Ventilation I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 1
+Her vælges det ønskede ventilationsniveau.
+               ↳ Temperaturer I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+5 - 40 °C
+22
+ °C
+Her indstilles den ønskede rumtemperatur.
+          ↳ Funktion 5 og 6 I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Under hver funktion kan der indstilles mellem tid,
+te
+mperatur og ventilationstrin
+Slukket
+Programmet kører til næste programskift i ugeplanen.
+↳ Nulstil program B
+ eskrivelse: Her er det muligt at nulstille programmet ved at trykke
+på
+ godkend ikonet.
+Comfort CT300 Polar  B Y NILAN
+15
+Eftervarme
+Denne menu er kun synlig, hvis der er installeret en eftervarmeflade.
+OBS
+Eftervarmeflade er ikke standard, men kan købes som tilbehør.
+Ønskes det at styre indblæsningstemperaturen, er det nødvendigt at montere en eftervarmeflade.
+Med en eftervarmeflade kan man styre temperaturen i tilluften (indblæsningen) uafhængig af
+udetemperaturen.
+Der kan monteres en ekstern el- eller en vand-eftervarmeflade til montage i tilluft-kanalen.
+Eftervarme
+↳ Aktiver Indstillinger:
+Standardindstilling:
+Beskrivelse:
+Slukket / Tændt
+Slukket
+Her er det muligt at tænde eller slukke for
+eftervarmen.
+16
+Luftfugtighed
+De
+t primære formål med ventilation, er at ventilere fugten ud af boligen, så den ikke skader bygningen
+og samtidig opnå et godt indeklima. I længere perioder med frostvejr kan luftfugtigheden i boligen
+komme ned på et niveau, som kan være kritisk for bygning og indeklimaet. Trægulve, møbler og vægge
+kan tage skade af for tør luft, og støv hvirvles op, så det giver et dårligt indeklima.
+For at afhjælpe dette har styringen en indbygget fugtstyring, der kan opretholde god relativ
+luftfugtighed. Når den gennemsnitlige luftfugtighed i boligen kommer under et indstillet niveau
+(fabriksindstilling 30%), kan man vælge at reducere ventilationen. Det vil typisk vare i en kort periode.
+På den måde er det muligt at undgå yderligere udtørring af luftfugtigheden i boligen.
+Fugtstyringen har også en funktion, der giver mulighed for at forøge ventilationen, hvis
+luftfugtigheden bliver høj, når man f.eks. går i bad. Det formidsker risikoen for dannelse af
+skimmelsvamp i badeværelset, og i de fleste tilfælde undgår man dug på spejlet i badeværelset.
+Fugtstyringen styrer efter den gennemsnitlige luftfugtighed målt igennem de sidste 24 timer. På den
+måde tilpasser den sig automatisk forholdene sommer og vinter.
+Luftfugtighed
+↳ Vent.lav fugtighed I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 1
+Ved lav fugtighed skifter aggregatet til det indstillede
+ventilationstrin.
+↳ Lav fugtig.niveau I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+15 ↔ 45 %
+3
+0 %
+Styringen udregner en gennemsnitlig luftfugtighed
+målt over de sidste 24 timer. Hvis den gennemsnitlige
+luftfugtighed i udsugningsluften kommer under dette
+niveau, aktiveres "Lav fugtighed" funktionen.
+↳ Vent.høj fugtighed I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Trin 2 / Trin 3 / Trin 4 / Slukket
+Tr
+in 3
+Ved høj fugtighed, hvis man f.eks. går i bad, skifter
+aggregatet til det indstillede ventilationstrin.
+↳ Max tid høj fugt. I
+ ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+1 ↔ 180 minutter / Slukket
+6
+0 minutter
+Funktionen "Høj fugtighed" stopper, når aktuel
+fugtighed kommer under 3% over gennemsnitlig
+luftfugtighed.
+Der er indsat en tidsbegrænsning for, hvor lang tid
+funktionen må køre.
+Comfort CT300 Polar  B Y NILAN
+17
+CO2
+Denne menu er kun synlig, hvis der er installeret en CO 2 sensor.
+OBS
+CO2 sensor er ikke standard i alle aggregater, men kan købes som tilbehør.
+Er personbelastningen meget forskellig kan det give god mening at styre ventilationen efter CO 2-
+niveauet i udsugningsluften. Denne funktion bruges ofte i kontorer og skoler, hvor belastningen
+svinger meget hen over dagen og ugen.
+CO2
+↳ Vent.høj CO2 niv. Indstillinger:
+Standardindstilling:
+Beskrivelse:
+Trin 2 / Trin 3 / Trin 4 / Slukket
+Trin 3
+Her angives, hvilket ventilationstrin aggregatet skal
+køre ved høj CO
+2-niveau.
+↳ Højt CO2 niveau Indstillinger:
+Standardindstilling:
+Beskrivelse:
+650 ↔ 2500 ppm
+800 ppm
+Her angives, ved hvilket CO
+2-niveau aggregatet skal
+skifte til høj ventilationstrin.
+↳ Normalt CO2 niv. Indstillinger:
+Standardindstilling:
+Beskrivelse:
+400 ↔ 750 ppm
+600 ppm
+Her angives, ved hvilket CO
+2-niveau aggregatet skal
+skifte til normal styring.
+Luftskifte
+Det er muligt at forebygge lav fugtighed i boligen, ved at reducere ventilationen ved en lav
+udetemperatur. Denne funktion er bl.a. brugbar i lande med megen frost samt i højderne i bjergene,
+hvor udeluften er meget tør.
+Funktionen kan også bruges, hvis der ikke er eftervarmeflade monteret og tilluften føles for kold ved
+lav udetemperatur.
+Luftskifte
+↳ Vinter lav vent. Indstillinger:
+Standardindstilling:
+Beskrivelse:
+Trin 1 / Trin 2 / Trin 3 / Slukket
+Slukket
+Her angives, hvilket ventilationstrin aggregatet skal
+køre ved lav udetemperatur.
+↳
+ Niveau vinter lav Indstillinger:
+Standardindstilling:
+Beskrivelse:
+-20 - 40 °C
+0 °C
+Her angives, ved hvilken udetemperatur der skal
+skiftes til "Vinter lav".
+18
+Luftfilter
+Fr
+a fabrikken er filteralarmen indstillet med timer, der har 90 dage mellem hvert filterskift. Ønsker
+man at tilkoble trykstyret filterskift, er det muligt at tilslutte tryksensorer via en digital indgang og
+ændre dette i filtermenuen.
+Luftfilter
+↳ Filteralarm I ndstillinger:
+St
+andardindstilling:
+Beskrivelse:
+Filtervagt / 30 / 60 / 90 / 180 / 360 / vagt + 70 dage
+90
+ dage
+Indstilling af antal dage mellem filterskift kan indstilles
+efter behov.
+Det er vigtigt med rene filtre for at opnå en optimal
+drift. En tilstoppet veksler øger strømforbruget.
+Comfort CT300 Polar  B Y NILAN
+19
+Temp. regulering
+Er der ikke installeret en eftervarmeflade, bruges indstillingerne til at styre bypass-spjældet med.
+Ønskes det at styre indblæsningstemperaturen, er det nødvendigt at montere en eftervarmeflade.
+Med en eftervarmeflade kan man styre temperaturen i tilluften (indblæsningen) uafhængig af
+udetemperaturen.
+Der kan monteres en ekstern el- eller en vand-eftervarmeflade til montage i tilluft-kanalen.
+OBS
+Når der ikke er behov for varme i boligen, kan tillufttemperaturen godt komme ned under
+minimum temperaturen.
+Temp. regulering
+↳ Min.tilluft sommer Indstillinger:
+Standardindstilling:
+Beskrivelse:
+5 ↔ 16 °C
+14 °C
+Her indstilles den tilluftstemperatur, aggregatet som
+minimum skal kunne blæse ind med om sommeren. Er
+udelufttemperaturen lavere end angivet, lukker
+bypass-spjældet, og anlægget kører med
+varmegenvinding.
+↳
+ Min.tilluft vinter Indstillinger:
+Standardindstilling:
+Beskrivelse:
+14 ↔ 22 °C
+16 °C
+Her indstilles den tilluftstemperatur, aggregatet som
+minimum skal kunne blæse ind med om vinteren. Har
+kun effekt med en eftervarmeflade.
+↳
+ Max.tilluft sommer Indstillinger:
+Standardindstilling:
+Beskrivelse:
+16 ↔ 25 °C
+22 °C
+Her indstilles den tilluftstemperatur, aggregatet som
+maksimum skal kunne blæse ind med, når der er behov
+for varme (vises kun i panelet, hvis der er
+eftervarmeflade på anlægget).
+↳
+ Max.tilluft vinter Indstillinger:
+Standardindstilling:
+Beskrivelse:
+14 ↔ 22 °C
+16 °C
+Her indstilles den tilluftstemperatur, aggregatet som
+maximum skal kunne blæse ind med om vinteren (vises
+kun i panelet, hvis der er eftervarmeflade på
+anlægget).
+↳
+ Sommer skift Indstillinger:
+Standardindstilling:
+Beskrivelse:
+5 ↔ 30 °C
+12 °C
+Her indstilles den minimum udetemperatur, for at
+aggregatet kører efter sommerdrift. Er
+udelufttemperaturen lavere, køres der vinterdrift.
+20
+Sprog
+Ag
+gregatet er fra fabrikken indstillet til det danske sprog. Det er muligt at ændre teksterne til andre
+sprog.
+Sprog
+↳ Dansk B eskrivelse: Vælg det sprog der ønskes i panelet.
+Comfort CT300 Polar  B Y NILAN
+21
+Alarmliste
+Comfort anlæg
+Alarmliste
+Fø
+rste kolonne i hændelsesloggen viser, om det er master (M) eller slave (3), som hændelsen gælder
+for.
+Nedenstående liste gælder for Comfort og hændelserne er opdelt i følgende kategorier:
+Info Information Normaldrift er ikke påvirket, og der kommer ingen information i displayet.
+Advarsel Driften fortsætter, men der er noget, som ikke længere fungerer optimalt.
+Kritisk Driften er delvis eller helt stoppet, da det er en alvorlig fejl, der straks kræver
+op
+mærksomhed.
+ID Type Displaytekst Beskrivelse / årsag Afhjælpning af fejl
+1
+ Hardware fejl Fejl i styringens hardware. Kontakt service såfremt nulstilling ikke
+hj
+ælper.
+2
+ Alarm
+ti
+meout Advarselsalarm er blevet til en kritisk alarm.
+Notér alarm og nulstil.
+Ko
+ntakt service såfremt alarm ikke
+forsvinder.
+3
+ Brandalarm
+ak
+tiveret
+Brandtermostat. Anlægget er stoppet pga. at
+br
+andtermostaten er aktiveret.
+Såfremt der ikke har været brand kontakt
+se
+rvice.
+7
+Frost i
+ef
+tervarmefl
+ade
+Temperaturfølere:
+An
+læg uden T9 føler: Vandflade
+frosttermostat udløst.
+Anlæg med T9 føler: Vandflade kunne ikke nå
+20°C inden for 6 min.
+Kontroller at der er isoleret korrekt omkring
+va
+ndflade og tilslutninger.
+Nulstil alarm.
+8
+ Frosttermost
+at
+ udløst
+Temperaturfølere:
+Ku
+n på anlæg med T9 føler: Vandflade
+frosttermostat udløst.
+Kontroller at der er isoleret korrekt omkring
+va
+ndflade og tilslutninger.
+Nulstil alarm.
+10 Info
+Overhedss.
+el
+-
+eftervarme
+El-varmeflade er overophedet. Manglende
+lu
+ftgennemstrømning som følge af f.eks.
+tilstoppede filtre, tilstoppet luftindtag eller
+defekt indblæsningsventilator.
+Kontroller, at der blæses luft ind i boligen.
+Ko
+ntroller filter samt luftindtag.
+Nulstil alarm.
+Kontakt service såfremt ovenstående ikke
+hjælper.
+11 Info
+Lavt flow
+ov
+er el-
+varmefl
+Manglende luftgennemstrømning i
+in
+dblæsning.
+Se alarmkode 10.
+Se alarmkode 10.
+15
+ Rumtemperat
+ur
+en for lav
+Når rumtemperaturen er under 10°C, vil
+an
+lægget stoppe for at undgå yderligere
+nedkøling af boligen. Dette kan evt. være i en
+periode, hvor huset ikke er beboet og husets
+varmeanlæg er stoppet.
+Opvarm huset og nulstil alarm.
+16 Info Software fejl Fejl i styringens program. Kontakt service.
+17 Info Watchdog
+ad
+varsel Fejl i styringens program. Kontakt service.
+22
+18 Info
+Database
+in
+dhold
+ændret
+Dele af programopsætningen er gået tabt.
+De
+tte kan skyldes længerevarende
+strømafbrydelse eller lynnedslag.
+Anlægget vil køre videre med
+standardopsætning.
+Nulstil alarm.
+Pr
+ogrammer ugeprogram som ønsket.
+Kontakt service såfremt anlægget ikke kører
+tilfredsstillende/som før, da evt.
+underprogrammer kan være gået tabt.
+(Underprogram er kun tilgængelig for
+service).
+19 Info Udskift filter
+Filtervagt er opsat til X antal dage for
+ko
+ntrol/udskiftning af filter (30, 90, 180, 360
+dage). Standardopsætning er 90 dage.
+Rengør/udskift filter.
+Nu
+lstil alarm.
+21 Info Kontroller
+da
+to og tid Fremkommer ved strømsvigt.
+Ugeurets indstillinger skal kontrolleres og
+ev
+t. indstilles.
+Nulstil alarm.
+22 Info
+Fejl i
+lu
+fttemperat
+ur
+Den ønskede opvarmning af
+in
+dblæsningsluften er ikke mulig (gælder kun
+ved eftervarmeflade). Eftervarmeflade og
+anlæg kan ikke hæve temperaturen til det
+ønskede.
+Indstil lavere ønsket
+in
+dblæsningstemperatur.
+Nulstil alarm.
+71
+ Fejl afrimning
+va
+rmeveks.
+Max afrimningstid overskredet for
+mo
+dstrømsveksler. Dette kan skyldes, at
+anlægget udsættes for meget lave
+temperaturer.
+Kontakt service såfremt nulstilling af alarm
+ik
+ke hjælper. Notér evt. de aktuelle
+driftstemperaturer fra menuen "VIS DATA"
+som hjælp for service.
+91 Info Manglende
+op
+tionsprint Optionsprint mangler. Kontakt service.
+92 Info Backup fejl Fejl ved skrivning eller indlæsning af
+in
+stallatørens indstillinger. Kontakt service.
+96
+ Fejl i
+sp
+jældtest Spjæld (åben / lukket) ikke opfyldt Skal afstilles i Alarmen
+Comfort CT300 Polar  B Y NILAN
+23
+Produkt data
+Ov
+erensstemmelseserklæring
+24
+Ecodesign data Comfort CT300
+SEC* gennemsnitligt klima - 40,0 kWh/(m 2.a )
+SEC* koldt klima - 78,1 kWh/(m 2.a )
+SEC* varmt klima - 15,5 kWh/(m 2.a )
+SEC-klasse A
+Type Ventilationsaggregat til bolig
+Type drev Trinløs regulering
+Type varmegenvindingssystem Rekuperatur (modstrømsveksler)
+Temperaturvirkningsgrad 88 %
+Maksimal volumenstrøm 400 m 3/h (100 Pa)
+T
+ilført elektrisk effekt til ventilatorer og styring ved
+ma
+ksimal volumenstrøm 147 W
+Lydeffektniveau (LWA) 46 dB(A)
+Referencevolumenstrøm 0,078 m 3/s  (280 m 3/h)
+Referencetrykforskel 50 Pa
+SEL 0,22 W/(m 3/h )
+Centralt behovsstyret regulering 0,85
+Maksimal intern lækage 1,1 %
+Maksimal ekstern lækage 1,4 %
+Filteralarmsignal
+Ved behov for udskiftning af filter vises en alarm på
+be
+tjeningspanelet. NB! Det er vigtigt med regelmæssig
+filterskift af hensyn til aggregatets præstationer og
+energieffektivitet.
+Anvisning vedr. demontage www.nilan.dk
+* Specifikt energiforbrug
+AEC - årligt elforbrug 246 kWh/år (100 m 2)
+AHS** gennemsnitligt klima 4548 kWh (100 m 2)
+AHS** koldt klima 8998 kWh (100 m 2)
+AHS** varmt klima 2057 kWh (100 m 2)
+** Årlig varmebesparelse, primær energi
+Comfort CT300 Polar  B Y NILAN
+25
+Passivhus-certifikat
+Passivhus institutet er et uafhængigt institut, der tester og
+ce
+rtificerer produkter med hensyn til egnethed for anvendelse i
+passivhuse.
+Produkter der er "Passivhuse godkendt" er blevet testet
+ioverensstemmelse med ensartede kriterier og kan sammenlignes
+med hensyn til deres egenskaber og fremragende kvalitet i
+forbindelse med energibesparelse.
+Certificeringen betyder helt konkret, at aggregatet er
+forhåndsgodkendt til at indgå i passivhuse uden yderligere kontrol
+af dets effektivitet.
+26
+Comfort CT300 Polar  B Y NILAN
+27
+Dokument nr.B24_Comfort_CT300-Polar_DK
+Nilan A/S påtager sig intet ansvar for eventuelle fejl og mangler i trykte vejledninger - eller for tab eller skader som følge af det publicerede materiale, hvad enten dette skyldes fejl eller
+uhensigtsmæssigheder i materialet eller andre årsager. Nilan A/S forbeholder sig ret til uden forudgående varsel at foretage ændringer af produkter og vejledninger. Alle varemærker
+tilhører Nilan A/S, og alle rettigheder forbeholdes.

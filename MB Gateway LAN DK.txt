@@ -1,0 +1,403 @@
+BRUGER- OG MONTAGEVEJLEDNING
+Gateway LAN
+CTS400/CTS602 BY NILAN
+Version 1.40 - 01.11.2023
+MB Gateway LAN DK
+
+2
+Indholdsfortegnelse
+Generelle oplysninger
+Produktbeskrivelse ..................................................................................................................................................................................... 3
+Nilan Bruger App ................................................................................................................................................................................... 3
+Indledende opsætning ................................................................................................................................................................................ 3
+Opsætningsrækkefølgen ..................................................................................................................................................................... 3
+Montagevejledning
+Gateway ........................................................................................................................................................................................................ 4
+Tilslutningsoversigt Gateway ............................................................................................................................................................. 4
+El-tilslutning ........................................................................................................................................................................................... 4
+Tilslutning af Gateway til dit Nilan aggregatet ...................................................................................................................................... 5
+Generelt .................................................................................................................................................................................................. 5
+LAN-kabel typer ................................................................................................................................................................................... 5
+Tilslutning til aggregater med CTS400 styring ...................................................................................................................................... 6
+Tilslutning til aggregater med CTS602 styring med 6-polet stik ................................................................................................. 7
+Tilslutning til aggregater med CTS602 styring med 8-polet stik ................................................................................................. 8
+Tilslutning til aggregater med CTS602 styring med RJ45 udtag .................................................................................................. 9
+Tilslutning til aggregater med CTS602 styring erhverv ............................................................................................................. 10
+Tilslutning til internettet .................................................................................................................................................................. 11
+Kontrol af forbindelser ..................................................................................................................................................................... 11
+Opsætning af Nilan Bruger App ............................................................................................................................................................. 12
+Download Nilan Bruger App ............................................................................................................................................................. 12
+Opret en bruger på App’en  ............................................................................................................................................................... 13
+Opret flere brugere til App’en .......................................................................................................................................................... 13
+Tilføj flere aggregater/Gateways til App’en ................................................................................................................................. 14
+Brugervejledning
+Nilan Bruger App ...................................................................................................................................................................................... 15
+Indledning ............................................................................................................................................................................................ 15
+Forklaring af forside-elementer ..................................................................................................................................................... 15
+Temperatur ......................................................................................................................................................................................... 16
+Ventilation ........................................................................................................................................................................................... 16
+Varmt brugsvand ............................................................................................................................................................................... 17
+Luftfugtighed ...................................................................................................................................................................................... 18
+CO2 indstillinger ................................................................................................................................................................................. 18
+Filterskift ............................................................................................................................................................................................. 19
+Vis data ................................................................................................................................................................................................ 19
+Trendkurve ......................................................................................................................................................................................... 19
+3
+Generelle oplysninger
+Produktbeskrivelse
+Nilan Bruger App
+Denne App kan styre Nilans ventilationsagregater og varmepumper med CTS400 eller CTS602 styring. Hvis ikke der allerede medføl-
+ger en Gateway med aggregatet, skal den tilkøbes. Gateway’en skal tilsluttes aggregates modbus indgang. Når der foretages indstil-
+linger fra App’en kan der gå nogle få sekunder, inden ændringen træder i kraft på aggregatet.
+Forbindelsen fra App til gateway foregår via en sikker cloud forbindelse, dermed kan man tilgå Nilan aggregatet fra hvilket som helst 
+sted i verden, bare man har internetforbindelse.
+Indledende opsætning
+Opsætningsrækkefølgen
+Dette afsnit beskriver rækkefølgen i opsætningen inden Bruger App’en kan benyttes.
+1. Tilslut Gateway’en til ventilationsaggregatetets modbus forbindelse - se montagevejledning
+2. Tilslut strøm til Gateway’en - se montagevejledning
+3. Tjek online lampe. Hvis den blinker konstant, er modbusforbindelsen etableret.
+4. Tilslut LAN kabel fra Gateway til Router - se montagevejledning
+5. Lyser online knappen konstant, er der etableret forbindelse til nettet
+6. Download appen - åbn den og tilknyt ventilationsaggregatet - se montagevejledning
+4
+Montagevejledning
+Gateway
+Tilslutningsoversigt Gateway
+El-tilslutning
+1. 230V tilslutning (ledning medfølger)
+2. Reserveret til fremtidige tilslutninger
+3. Tilslutning til aggregatets Modbus forbindelse
+4. Tilslutning til brugerens internet-router
+5. Lampe til kontrol af forbindelse
+Gatewayen tilsluttes 230V via medleverede kabel.
+
+5
+Tilslutning af Gateway til dit Nilan aggregatet
+Generelt
+For at man kan kommunikere med sit Nilan aggregat, skal Gateway´en forbindes til aggregatets Modbus kommunikation.
+Forbindelsen til det enkelte aggregat varierer afhængig af aggregatets styring, betjeningspanel, softwareversion og alder.
+Nedenfor er vist en oversigt over produkter og softwareversioner, der umiddelbart kan tilsluttes Nilan Gateway. Er software 
+versionen ældre på dit aggregat kræves der en software opdatering, der kun kan udføres af en teknikker. Har dit aggregat ikke en af 
+nævnte styringer, kan det ikke tilsluttes Nilan Gateway.
+LAN-kabel typer
+Man skal være opmærksom på at der findes flere forskellige LAN-kabel typer med RJ45 stik.
+CTS400 CTS602/CTS602i CTS602/CTS602i CTS602Light
+Alle Comfort 
+boligventilationsaggregater
+SW 1.0
+eller nyere
+SW 2.24 
+eller nyere
+SW 1.6.6.0
+eller nyere
+SW 1.1.15.0
+eller nyere
+Alle andre
+boligventilationsaggregater 
+med varmepumper
+Findes ikke SW 2.38r
+eller nyere
+SW 1.6.45.0
+eller nyere
+Findes ikke
+Alle Comfort
+erhvervsaggregater
+Findes ikke SW 2.38r
+eller nyere
+SW 1.6.45.0
+eller nyere
+Findes ikke
+Alle VPM/VPL
+erhvervsaggregater
+Findes ikke SW 2.38r
+eller nyere
+SW 1.6.45.0
+eller nyere
+Findes ikke
+Alle VPR
+erhvervsaggregater
+Findes ikke SW 2.38r
+eller nyere
+SW 1.6.45.0
+eller nyere
+Findes ikke
+Standardkabel fra Nilan, og alle efterfølgende installations 
+illustrationer er vist med et A-kabel
+B-kabel kan forekomme. I efterfølgende installations 
+illustrationer skiftes grøn/hvid ud med orange/hvid.
+OBS
+Der må ikke anvendes et krydset kabel, og kablet må maks. være 20 m.
+
+6
+Tilslutning til aggregater med CTS400 styring
+Ventilationsaggregater med CTS400 styring er alle udstyret med et RJ45 udtag.
+Hvis der ikke er installeret nogen anden ekstern tilslutning til ventilationsaggregatet, trækkes der bare et RJ45 kabel fra Modbus ind-
+gangen på Gatewayen til RJ45 stikket på ventilationsaggregatet, og forbindelsen er skabt. 
+Placering af RJ45 udtaget på ventilationsaggregatet, kan se i montagevejledningen for det enkelte aggregat.
+Hvis der er eksterne enheder tilsluttet, vil det oftest være via en tilslutningsboks. I det tilfælde tilsluttes RJ45 kablet til Gatewayen og 
+den anden ende af kablet klippes RJ45 stikket af og tilsluttes tilslutningsboksen efter nedenstående diagram.
+Illustrationen vises med Type A LAN-kabel
+Tilslutning Type A LAN-kabel i CTS400 tilslutningsboks
+Grøn/hvid - GND (1)
+Blå/hvid     - Modbus - (5)
+Blå                  - Modbus+ (4)
+Tilslutning Type B LAN-kabel i CTS400 tilslutningsboks
+Orange/hvid - GND (1)
+Blå/hvid           - Modbus - (5)
+Blå                        - Modbus+ (4)
+
+7
+Tilslutning til aggregater med CTS602 styring med 6-polet stik
+Ældre ventilationsaggregater med CTS602 styring er udstyret med et 6-polet stik til betjeningspanelet. Det fremgår af vejledningen 
+på dit ventilationsaggregat, hvilket udtag det har.
+I det tilfælde skal der trækkes et kabel direkte til printet i ventilationsaggregatet. Til det anbefaler vi en Nilan teknikker.
+Illustrationen vises med Type A LAN-kabel
+Placering af printet i ventilationsaggregatet og hvordan man trækker kablet der til, kan ses i montagvejledningen for det enkelte 
+aggregat.
+Det 6-polede stik ser således ud:
+ADVARSEL
+Afbryd strømmen til ventilationsaggregatet, inden du åbner lågerne for at tilslutte gateway´en til printet.
+Tilslutning Type A LAN-kabel på CTS602 printet
+Blå                  - Modbus+ (2/CN7 - A1)
+Blå/hvid     - Modbus - (3/CN7 - B1)
+Grøn/hvid - GND (6/CN7)
+Tilslutning Type B LAN-kabel på CTS602 printet
+Blå                        - Modbus+ (2/CN7 - A1)
+Blå/hvid           - Modbus - (3/CN7 - B1)
+Orange/hvid - GND (6/CN7)
+
+8
+Tilslutning til aggregater med CTS602 styring med 8-polet stik
+Nogle ventilationsaggregater med CTS602 styring er udstyret med et 8-polet stik til betjeningspanelet, hvori man kan tilslutte 
+Modbus forbindelsen. Det fremgår af vejledningen på dit ventilationsaggregat, hvilket udtag det har, samt hvor det er placeret.
+Illustrationen vises med Type A LAN-kabel
+Tilslutning Type A LAN-kabel på CTS602 8-polet stik
+Blå/hvid     - Modbus - (7)
+Blå                  - Modbus+ (6)
+Grøn/hvid - GND (1)
+Tilslutning Type B LAN-kabel på CTS602 8-polet stik
+Blå/hvid           - Modbus - (7)
+Blå                        - Modbus+ (6)
+Orange/hvid - GND (1)
+
+9
+Tilslutning til aggregater med CTS602 styring med RJ45 udtag
+Nogle ventilationsaggregater med CTS602 styring er udstyret med et RJ45 udtag. Det fremgår af vejledningen på dit ventilationsag-
+gregat, hvilket udtag det har.
+Hvis der ikke er installeret nogen anden ekstern tilslutning til ventilationsaggregatet, sidder der et RJ45 stik med lus i udtaget. Det stik 
+tages ud, og der indsættes et splitter kabel, hvor RJ45 stikket med lus placeres i det ene stik og tilslutningen til Gateway’en placeres i 
+det andet.
+Placering af RJ45 udtaget på ventilationsaggregatet, kan se i montagevejledningen for det enkelte aggregat.
+Hvis der er eksterne enheder tilsluttet, vil det oftest være via en tilslutningsboks. I det tilfælde tilsluttes RJ45 kablet til Gateway’en og 
+den anden ende af kablet klippes RJ45 stikket af og tilsluttes tilslutningsboksen efter nedenstående diagram.
+Illustrationen vises med Type A LAN-kabel
+Tilslutning Type A LAN-kabel i CTS602 tilslutningsboks
+Blå/hvid     - Modbus - (5)
+Blå                  - Modbus+ (4)
+Grøn/hvid - GND (1)
+Tilslutning Type B LAN-kabel i CTS602 tilslutningsboks
+Blå/hvid           - Modbus - (5)
+Blå                        - Modbus+ (4)
+Orange/hvid - GND (1)
+
+10
+Tilslutning til aggregater med CTS602 styring erhverv
+Nogle erhvervsanlæg har en tilslutningsboks uden på aggregatet. Andre må man tilslutte Modbus direkte på printet. Det fremgår af 
+vejledningen på dit ventilationsaggregat, hvilket udtag det har.
+Illustrationen vises med Type A LAN-kabel
+I det tilfælde skal der trækkes et kabel direkte til printet i ventilationsaggregatet. Til det anbefaler vi en Nilan teknikker.
+Illustrationen vises med Type A LAN-kabel
+Placering af printet i ventilationsaggregatet, kan ses i montagevejledningen for det enkelte aggregat.
+Tilslutning Type A LAN-kabel i CTS602 tilslutningsboks erhverv
+Blå/hvid     - Modbus - (7)
+Blå                  - Modbus+ (6)
+Grøn/hvid - GND (1)
+Tilslutning Type B LAN-kabel i CTS602 tilslutningsboks erhverv
+Blå/hvid           - Modbus - (7)
+Blå                        - Modbus+ (6)
+Orange/hvid - GND (1)
+ADVARSEL
+Afbryd strømmen til ventilationsaggregatet, inden du åbner lågerne for at tilslutte gateway´en til printet.
+Tilslutning Type A LAN-kabel på CTS602 printet
+Blå                  - Modbus+ (2/CN7 - A1)
+Blå/hvid     - Modbus - (3/CN7 - B1)
+Grøn/hvid - GND (6/CN7)
+Tilslutning Type B LAN-kabel på CTS602 printet
+Blå                        - Modbus+ (2/CN7 - A1)
+Blå/hvid           - Modbus - (3/CN7 - B1)
+Orange/hvid - GND (6/CN7)
+
+11
+Tilslutning til internettet
+Gatewayen skal tilsluttes en router med internetforbindelse via et RJ45 kabel (ikke Nilan leverance).
+Når der er sat strøm til gatewayen og forbindelsen til routeren er skabt, er der oprettet en sikker cloud forbindelse, og der kan 
+kommunikeres med gatewayen via Nilan Bruger APP.
+Kontrol af forbindelser
+Ved hjælp ONLINE indikatoren er det muligt, at kontrollere forbindelserne, via 
+følgende kode:
+• Ved tilslutning af 230V - blinker lampen 5 sek.
+• Ved tilslutning af Modbus kommunikation - blinker lampen hele tiden
+• Ved tilslutning af Router - lyser lampen konstant
+• Ved tilslutning af Router uden Modbus kommunikation - lyser lampe ikke
+
+12
+Opsætning af Nilan Bruger App
+Download Nilan Bruger App
+Det er muligt at downloade Nilan Bruger App fra Google play eller App Store. Før App’en kan anvendes, skal du have anskaffet dig en 
+Nilan gateway og tilsluttet den som anvist i denne vejledning under Montagevejledning.
+Find App’en og åbn den. T ryk på ”Tilslut 
+enhed”
+Indtast herefter det ID nummer, der er påsat ovenpå Gateway’en 
+OBS
+Nilan gateway skal være tilsluttet ventilationsaggregatet før App’en kan anvendes.
+
+13
+Opret en bruger på App’en 
+Opret flere brugere til App’en
+Opret bruger ved at Indtaste den e-mail 
+adresse, der skal tilknyttes gateway’en /
+aggregatet.
+T ryk ”Ok” og du er oprettet som bruger. Herefter er det muligt at slette brugeren, 
+Få en ny adgangskode via mail eller Log ud 
+OBS
+Hvis du fraflytter beboelsen, skal du huske at slette profilen, så en ny bruger kan oprettes til aggregatet.
+Det er muligt at tilknytte flere brugere til App’en. 
+Opret flere brugere til den samme Gateway/aggregat, f.eks. mand og kone adgang.
+Dette gøres ved at tilknytte Gateway ID, og indtaste den e-mail adresse og password, 
+der er tilknyttet Gateway’en.
+
+14
+Tilføj flere aggregater/Gateways til App’en
+Det er muligt at tilknytte flere aggregater/Gateways til App’en. 
+Inden der tilsluttes flere aggregater til App,en, skal der logges ud og ind igen med eksi-
+sterende brugernavn og password.
+T ryk på tilføj ID under indstillinger og indtast Gateway nummer og den e-mail adresse, 
+der anvendes til brugeren.
+
+15
+Brugervejledning
+Nilan Bruger App
+Indledning
+Efterfølgende vejledning dækker alle Nilan ventilationsaggregater. Derfor kan der være nogle funktioner og indstillinger, som vises, 
+der ikke findes på dit ventilationsaggregat. De ting der vises i Nilan Bruger App på din telefon, er nogenlunde de brugerindstillinger, der 
+findes for netop dit ventilationsaggregat.
+Er der brug for uddybende beskrivelse af de enkelte funktioner og indstillinger, kan du downloade softwarevejledningen for dit 
+ventilationsaggregat på vores hjemmeside.
+Forklaring af forside-elementer
+1. På forsiden under Nilan logoet vises nummeret på den tilsluttede Gateway. 
+Det er muligt, under indstillinger at navngive ventilationsaggregatet til f.eks. 
+Hus eller Sommerhus, så vises navnet i stedet for. 
+Har man flere ventilationsaggregater tilsluttet App´en, kan man se, hvilket
+ventilationsaggregat data vises for. 
+Ved siden af nummeret vises et WiFi ikon, der er grønt, hvis der er forbindelse
+med anlægget og rødt, hvis forbindelsen er brudt.
+2. Her vises de elementer, der er mulige for dit ventilationsaggregat. Hvis der er 
+flere elementer end der kan vises på skærmen, ligger de resterende nedenfor, 
+og kan vises ved at scrolle op med fingeren på elementerne.
+Ved et kort tryk på et element, kommer man til en indstillingsmenu.
+3. Hurtigknap til at komme til forsiden igen.
+4. Ved tryk på dette ikon, får man vist alle aktuelle og relevante data i listeform.
+5. Ved tryk på dette ikon, kommer man til en side, hvor det er muligt at se en 
+trendkurve for relevante data.
+6. Ved tryk på dette ikon, kommer man til indstillinger, hvor det er muligt at til -
+knytte flere ventilationsaggregater.
+7. Alarm ikonet fremkommer, hvis der kommer en alarm på aggregatet. Ved at 
+trykke på ikonet, kommer man til en oversigt med de seneste alarmer. 
+Hvis der er flere ventilationsaggregater tilsluttet samme App, skal man gå til 
+indstillinger og vælg aggregat for at se for hvilket aggregat alarmen gælder.
+
+16
+T emperatur
+Ventilation
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Rumtemperaturen kan indstilles ved at scrolle op eller ned med fingeren på 
+ikonet. Hvis ventilationsaggregatet er i varmedrift vises søjlen som rød. I køle-
+drift vises den som blå og i neutral drift som orange.
+3. Varmeindstillinger ikonet vises i nogle tilfælde, hvis der er tilsluttet en efter -
+varmeflade. Ved tryk på dette ikon, kommer man til varmeindstillinger. 
+4. Her vises den aktuelle rumtemperatur.
+5. Her vises den ønskede rumtemperatur.
+6. Køleikonet vises, hvis aggregatet har aktiv køling via en varmepumpe. Ved tryk 
+på dette ikon, kommer man til køleindstillinger. 
+7. Ved at scrolle op med fingeren på elementerne, fremkommer der en menu med
+valgmulighederne AUTO, VARME og KØL, som kan vælges.
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her kan indstilles det ønskede ventilationstrin. Det ønskede ventilationstrin 
+kan være forskelligt fra det der vises på forsiden, da aggregatet kan overstyre 
+det ønskede ventilationstrin ved f.eks. høj/lav fugt o.a.
+
+17
+Varmt brugsvand
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Ved at scrolle ned med fingeren kan den aktuelle varmtvandstemperatur aflæ -
+ses. 
+3. Varmt brugsvand kan indstilles ved at scrolle op eller ned med fingeren på iko -
+net. Der kommer en indikation under termometret, når aggregatet producerer 
+varmt brugsvand. Farven i termometret skifter afhængig af temperaturen 
+>40° C er den rød 30-40°C orange og <30° C blå. Så kan man se om der er nok 
+varmt vand til et bad.
+4. Her vises den indstillede varmtvandstemperatur.
+5. Ved tryk på dette ikon, kommer man til yderligere indstillinger. 
+6. Ved at trykke her, kan varmtvandsproduktionen deaktiveres. Ved at scrolle op 
+med fingeren på temperatursøjlen og indstille til ønskede varmtvandstempe-
+ratur aktiveres varmtvandsproduktionen igen.
+Under ikonet indstillinger (5) er der mulighed for indstillinger af el-supplering og 
+anti-legionella.
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her er det muligt at stille temperaturen for, hvornår el-supplering skal aktive-
+res og hjælpe med at opvarme det varme brugsvand.
+3. Her er det muligt at deaktivere el-suppleringen.
+4. Her kan man slukke for anti-legionella behandlingen eller indstille hvilken uge -
+dag, der skal køres anti-legionella behandling.
+
+18
+Luftfugtighed
+CO2 indstillinger
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her indstilles værdien for lav luftfugtniveau mellem 15 – 45%.
+3. Her indstilles ventilationstrin for lav luftfugtighed mellem trin 1 – 3 og 
+de-aktivere funktionen.
+4. Her indstilles ventilationstrin for høj luftfugtighed mellem trin 2 – 4 og 
+de-aktivere funktionen.
+5. Her indstilles den maksimale tid ved høj luftfugtighed.
+6. Ved tryk på dette ikon, kommer man til yderligere indstillinger.
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her indstilles temperaturen for forebyg lav udetemperatur niveau mellem -20 
+– +10°
+3. Her indstilles ventilationstrin for forebyg lav luftfugtighed mellem trin 1 – 3 og 
+de-aktivere funktionen.
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her indstilles værdien for normalt CO 2 niveau mellem 400 – 700. 
+3. Her indstilles værdien for højt CO 2 niveau mellem 650 – 2500. 
+4. Her indstilles ventilationstrin mellem trin 2 – 4 og de-aktivere funktionen.
+
+19
+Filterskift
+Vis data
+T rendkurve
+1. Ved tryk på ”tilbage” kommer man tilbage til forrige side.
+2. Her indstilles antal dage imellem hvert filterskift. 
+3. Her kan filterskift alarmen nulstilles. 
+4. Her kan der slukkes for ventilationsaggregatet inden filterskift og efterføl -
+gende starte aggregatet igen.
+OBS
+Husk man må aldrig slukke for aggregatet i længere tid, da der så kan 
+dannes kondensvand i aggregatet og kanalsystemet med fugtskader til 
+følge.
+Det er muligt at aflæse aktuelle driftsdata for ventilationsaggregatet. Det kan 
+være en god hjælp til at følge om driften kører tilfredsstillende og til at finde 
+årsagen til en eventuel alarm.
+Der er mulighed for at se en Trendkurve på forskellige parametre - 
+afhængig af, hvilket ventilationsaggregat du har.
+
+Nilan A/S påtager sig intet ansvar for eventuelle fejl og mangler i trykte vejledninger - eller for tab eller skader som følge af det publicerede materiale, hvad enten dette skyldes fejl eller 
+uhensigtsmæssigheder i materialet eller andre årsager. Nilan A/S forbeholder sig ret til uden forudgående varsel at foretage ændringer af produkter og vejledninger. Alle varemærker 
+tilhører Nilan A/S, og alle rettigheder forbeholdes.
+Nilan A/S
+Nilanvej 2
+8722 Hedensted
+Danmark
+Tlf.     +45 76 75 25 00
+nilan@nilan.dk
+www.nilan.dk
