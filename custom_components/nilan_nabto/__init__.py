@@ -1,16 +1,13 @@
 from __future__ import annotations
 
-from typing import Any
-
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from homeassistant.helpers import config_validation as cv
 
 from .const import CONF_SCAN_INTERVAL, DEFAULT_SCAN_INTERVAL, DOMAIN, PLATFORMS
 from .coordinator import NilanNabtoCoordinator
 
-
-async def async_setup(hass: HomeAssistant, config: dict[str, Any]) -> bool:
-    return True
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:

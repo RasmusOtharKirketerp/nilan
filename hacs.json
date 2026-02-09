@@ -3,6 +3,5 @@
   "content_in_root": false,
   "country": ["DK", "SE", "NO", "DE"],
   "homeassistant": "2026.2.1",
-  "filename": "custom_components/nilan_nabto/manifest.json",
   "render_readme": true
 }
