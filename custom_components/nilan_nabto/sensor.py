@@ -12,12 +12,23 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import CONF_DEVICE_ID, CONF_HOST, DOMAIN
 from .coordinator import NilanNabtoCoordinator
+from .vendor.genvexnabto.models import GenvexNabtoDatapointKey, GenvexNabtoSetpointKey
 
 
 @dataclass
 class NilanSensorDescription:
     key: str
     source: str
+
+
+def _all_class_values(cls) -> list[str]:
+    values: list[str] = []
+    for name, value in cls.__dict__.items():
+        if name.startswith("_"):
+            continue
+        if isinstance(value, str):
+            values.append(value)
+    return values
 
 
 class NilanNabtoSensor(CoordinatorEntity[NilanNabtoCoordinator], SensorEntity):
@@ -101,10 +112,12 @@ async def async_setup_entry(
 ) -> None:
     coordinator: NilanNabtoCoordinator = hass.data[DOMAIN][entry.entry_id]
 
-    data = coordinator.data or {}
     entities: list[SensorEntity] = [NilanStatusSensor(coordinator, entry)]
 
-    for key in sorted((data.get("datapoints") or {}).keys()):
+    datapoint_keys = sorted(set(_all_class_values(GenvexNabtoDatapointKey)))
+    setpoint_keys = sorted(set(_all_class_values(GenvexNabtoSetpointKey)))
+
+    for key in datapoint_keys:
         entities.append(
             NilanNabtoSensor(
                 coordinator,
@@ -113,7 +126,7 @@ async def async_setup_entry(
             )
         )
 
-    for key in sorted((data.get("setpoints") or {}).keys()):
+    for key in setpoint_keys:
         entities.append(
             NilanNabtoSensor(
                 coordinator,
