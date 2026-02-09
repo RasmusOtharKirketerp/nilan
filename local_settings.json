@@ -1,0 +1,19 @@
+{
+  "ha": {
+    "host": "192.168.86.40",
+    "port": 22,
+    "username": "root",
+    "auth": {
+      "method": "password",
+      "password": "iagmt5yc",
+      "private_key_path": ""
+    },
+    "config_path": "/config"
+  },
+  "deploy": {
+    "integration_src": "custom_components/nilan_nabto",
+    "integration_name": "nilan_nabto",
+    "restart_after_deploy": false,
+    "reload_integration_only": true
+  }
+}
